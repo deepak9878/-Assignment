@@ -31,7 +31,6 @@
 	text-align:center;
 	color: #FFF;
 		}
-
 .centercontent{
 	width:100%;
 	height:250px;
@@ -40,30 +39,25 @@
 	text-align:center;
 	color: #FFF;
 		}
-
-
-
-
-.leftcontent2{
+		.leftcontent2{
 	width:50%;
-	height:250px;
+	height:450px;
 
 	background-color: #999;
 	float:left;
 	text-align:center;
 	color: #FFF;
 		}
-
-.rightcontent2{
+		.rightcontent2{
 	width:50%;
-	height:250px;
+	height:450px;
 
-	background-color: #66C;
+	background-color:#0000FF;
 	float:left;
 	text-align:center;
 	color: #FFF;
-		}	
-.frontform{
+		}
+		.frontform{
 	margin-top:10px;
 }
 </style>
@@ -90,7 +84,7 @@ alert('Contact Number should be a numeric value only ');
 //document.getElementById('uname').value=data;	
 	}	
 </script>
-</head>
+	</head>
 <body>
 <div class="header">
 Site's Header 
@@ -98,13 +92,19 @@ Site's Header
 <div class="menu">
 Site's Menu
 </div>
-
-
-
 <div class="centercontent">
 </div>
+<div class="leftcontent2">
+<form method="post" >
+<div class="frontform"><input type="number" name="pa" id="pa"  placeholder="Amount" /></div>
+<div class="frontform"><input type="number" name="duration" id="duration" placeholder="Duration" onblur="f1()"  /></div>
+<div class="frontform"><input type="number" name="ta" id="ta" readonly="readonly" placeholder="Total Amount" /></div>
 
-<div class="rightcontent">
+<div class="frontform"><input type="submit" name="duration"  /></div>
+</div>
+</form>
+</div>
+<div class="rightcontent2">
 <form method="POST">
 <div class="frontform"><input type="text" name="uname" id="uname" placeholder="Your Name" required="required" onkeyup="f2()"  /></div>
 <div class="frontform"><input type="email" name="uemail" placeholder="Your Email" required="required"  /></div>
@@ -125,23 +125,12 @@ Other<input type="checkbox" name="other" value="other" />
 <input type="submit" name="submit"  />
 </div>
 </div>
-</form>
-<div class="leftcontent2">
-<form method="post" >
-<div class="frontform"><input type="number" name="pa" id="pa"  placeholder="Amount" /></div>
-<div class="frontform"><input type="number" name="duration" id="duration" placeholder="Duration" onblur="f1()"  /></div>
-<div class="frontform"><input type="number" name="ta" id="ta" readonly="readonly" placeholder="Total Amount" /></div>
-
-<div class="frontform"><input type="submit" name="duration"  /></div>
-</div>
-</form>
-<div class="centercontent2">
-</div>
-
-<div class="rightcontent2">
-</div>
 <div class="footer">
 </div>
 
-</body>
-</html>
+
+
+
+	
+		
+		
